@@ -35,16 +35,10 @@
     <header class="h-16 border-b border-border sticky top-0 bg-background/90 backdrop-blur-md z-50">
         <div class="max-w-7xl mx-auto h-full px-4 sm:px-6 grid grid-cols-3 items-center">
             
-            <!-- 1. LEFT COLUMN: LOGO & TRANG CHỦ -->
-            <div class="flex items-center gap-6 justify-start h-full">
+            <!-- 1. LEFT COLUMN: LOGO -->
+            <div class="flex items-center justify-start h-full">
                 <a href="index.html" class="text-2xl font-black tracking-tight bg-gradient-to-r from-blue-400 via-purple-400 to-pink-500 bg-clip-text text-transparent leading-none hover:opacity-90 transition-opacity">
                     Ykimi
-                </a>
-                <a href="index.html" class="hidden sm:flex text-sm font-medium text-muted hover:text-foreground transition-colors items-center gap-1.5 h-full">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 00-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
-                    </svg>
-                    Trang chủ
                 </a>
             </div>
 
@@ -58,101 +52,4 @@
                 </div>
             </div>
 
-            <!-- 3. RIGHT COLUMN: HỖ TRỢ & DONATE -->
-            <div class="flex items-center justify-end h-full gap-6">
-                <!-- Nút Hỗ trợ (Trang hiện tại - Nổi bật) -->
-                <a href="support.html" class="hidden sm:flex text-sm font-medium text-foreground transition-colors items-center gap-1.5 h-full border-b-2 border-purple-500 pt-0.5">
-                    <svg class="w-4 h-4 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 0l-5.656 5.656m5.656-5.656l-3.536-3.536m0 0L4.172 9.172a4 4 0 005.656 5.656l3.536-3.536"></path>
-                    </svg>
-                    Hỗ trợ
-                </a>
-                <a href="#" class="text-sm font-medium text-muted hover:text-foreground transition-colors flex items-center gap-1.5 h-full">
-                    <svg class="w-4 h-4 text-pink-500" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
-                    </svg>
-                    Donate
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <!-- MAIN CONTENT CONTAINER -->
-    <main class="max-w-5xl mx-auto px-4 sm:px-6 py-10">
-        <!-- Header tiêu đề -->
-        <div class="mb-10 text-center">
-            <span class="inline-block px-3 py-1 bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-semibold rounded-full mb-3">
-                Help Center & Support
-            </span>
-            <h1 class="text-3xl sm:text-4xl font-black text-white tracking-tight mb-3">
-                Trung Tâm Hỗ Trợ
-            </h1>
-            <p class="text-muted text-sm max-w-lg mx-auto leading-relaxed">
-                Giải đáp nhanh các thắc mắc về cài đặt mod, liên kết Google Drive và hướng dẫn xử lý sự cố.
-            </p>
-        </div>
-
-        <!-- DANH SÁCH CÂU HỎI THƯỜNG GẶP (FAQ GRID) -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-10">
-            
-            <div class="bg-surface border border-border p-6 rounded-2xl hover:border-gray-700 transition duration-200">
-                <div class="w-8 h-8 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 font-bold text-sm mb-4">
-                    01
-                </div>
-                <h3 class="text-base font-bold text-white mb-2">Cách cài đặt file Mod dịch thuật?</h3>
-                <p class="text-muted text-sm leading-relaxed">
-                    Mỗi bản mod đều nén dưới dạng `.zip` hoặc `.rar`. Bạn tải về, giải nén và chép đè các thư mục/file data vào thư mục cài đặt gốc của Game (ví dụ: <code class="bg-background px-1.5 py-0.5 rounded border border-border text-xs text-purple-300">Steam/steamapps/common/...</code>).
-                </p>
-            </div>
-
-            <div class="bg-surface border border-border p-6 rounded-2xl hover:border-gray-700 transition duration-200">
-                <div class="w-8 h-8 rounded-lg bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 font-bold text-sm mb-4">
-                    02
-                </div>
-                <h3 class="text-base font-bold text-white mb-2">Lỗi Drive "Quota Exceeded"?</h3>
-                <p class="text-muted text-sm leading-relaxed">
-                    Nếu Google Drive báo quá giới hạn lượt tải trong 24h, bạn chỉ cần đăng nhập tài khoản Drive của mình, bấm chọn <span class="text-white font-medium">"Tạo bản sao" (Make a copy)</span> về Drive cá nhân rồi tải bản sao đó về.
-                </p>
-            </div>
-
-            <div class="bg-surface border border-border p-6 rounded-2xl hover:border-gray-700 transition duration-200">
-                <div class="w-8 h-8 rounded-lg bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 font-bold text-sm mb-4">
-                    03
-                </div>
-                <h3 class="text-base font-bold text-white mb-2">Game bị Crash hoặc lỗi Font?</h3>
-                <p class="text-muted text-sm leading-relaxed">
-                    Hãy kiểm tra xem phiên bản game của bạn có đúng với phiên bản ghi trên bài viết hay không. Khi game có update mới từ nhà phát hành, bản mod cũ có thể cần vài ngày để cập nhật lại.
-                </p>
-            </div>
-
-            <div class="bg-surface border border-border p-6 rounded-2xl hover:border-gray-700 transition duration-200">
-                <div class="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 font-bold text-sm mb-4">
-                    04
-                </div>
-                <h3 class="text-base font-bold text-white mb-2">Báo lỗi Link tải hỏng?</h3>
-                <p class="text-muted text-sm leading-relaxed">
-                    Nếu gặp link Google Drive bị xóa hoặc không thể truy cập, vui lòng liên hệ trực tiếp Admin qua kênh bên dưới để được hỗ trợ reup link mới nhanh nhất.
-                </p>
-            </div>
-
-        </div>
-
-        <!-- KHUNG LIÊN HỆ ADMIN -->
-        <div class="p-8 bg-surface border border-border rounded-2xl text-center relative overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-r from-purple-500/5 via-transparent to-blue-500/5 pointer-events-none"></div>
-            <h3 class="text-lg font-bold text-white mb-2 relative z-10">Vẫn chưa giải quyết được vấn đề?</h3>
-            <p class="text-muted text-sm mb-6 max-w-md mx-auto relative z-10">Gửi tin nhắn cho đội ngũ Ykimi để được trợ giúp trực tiếp về các bản dịch mod.</p>
-            <a href="https://www.facebook.com/" target="_blank" class="inline-flex items-center gap-2 px-6 py-2.5 bg-foreground hover:bg-gray-200 text-background font-semibold text-sm rounded-full transition shadow-md relative z-10">
-                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                Liên hệ Facebook Admin
-            </a>
-        </div>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="border-t border-border py-8 text-center text-xs text-muted">
-        <p>© 2026 Ykimi. Minimalist Translation Mod Sharing.</p>
-    </footer>
-
-</body>
-</html>
+            <!-- 3. RIGHT COLUMN: TRANG CHỦ, HỖ TRỢ & DONATE -->
